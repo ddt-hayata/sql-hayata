@@ -3,8 +3,14 @@
  * 取得列は、title, publish_date列とします。以下の空欄を埋めて、SQL命令を完成させてください。
  */
 
-// 問題
-SELECT title, publish_date FROM books ① publish_date DESC LIMIT ②;
+ // 問題
+ SELECT title, publish_date
+ FROM books
+ ➀ publish_date DESC LIMIT ➁
+ ;
 
-// 回答
-SELECT title, publish_date FROM books ORDER BY publish_date DESC LIMIT 2,5;
+ // 回答
+ SELECT title, publish_date
+ FROM books
+ ORDER BY publish_date DESC LIMIT 2,5
+ ;

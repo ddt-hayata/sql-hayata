@@ -3,7 +3,11 @@
  * 取得列は、user_id, isbn, rental_date列とします。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT user_id, isbn, rental_date FROM rental WHERE returned = 0 ORDER BY rental_date ASC LIMIT 5;
+ // 回答
+ SELECT user_id, isbn, rental_date
+ FROM rental
+ WHERE returned = 0
+ ORDER BY rental_date ASC LIMIT 5
+ ;

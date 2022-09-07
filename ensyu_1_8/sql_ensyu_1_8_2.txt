@@ -3,8 +3,14 @@
  * 以下の空欄を埋めて、SQL命令を完成させてください。取得列は、name, answer1, answer2列とします。
  */
 
-// 問題
-SELECT name, answer1, answer2 FROM quest ORDER BY ① LIMIT ②, 10;
+ // 問題
+ SELECT name, answer1, answer2
+ FROM quest
+ ORDER BY ➀ LIMIT ➁, 10
+ ;
 
-// 回答
-SELECT name, answer1, answer2 FROM quest ORDER BY answered DESC LIMIT 0, 10;
+ // 回答
+ SELECT name, answer1, answer2
+ FROM quest
+ ORDER BY answered DESC LIMIT 0, 10
+ ;

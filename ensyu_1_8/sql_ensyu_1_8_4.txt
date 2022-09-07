@@ -4,9 +4,14 @@
  * 2点誤りがあります。誤りを指摘してください。
  */
 
-// 問題
-SELECT page_id, referer, ip_address FROM access_log ORDER BY access_date ASC LIMIT 10, 0;
+ // 問題
+ SELECT page_id, referer, ip_address
+ FROM access_log
+ ORDER BY access_date ASC LIMIT 10, 0
+ ;
 
-// 回答
-SELECT page_id, referer, ip_address FROM access_log ORDER BY access_date DESC LIMIT 0, 10;
-// 「access_date ASC」→「access_date DESC」、「LIMIT 10, 0」→「LIMIT 0, 10」
+ // 回答
+ SELECT page_id, referer, ip_address
+ FROM access_log
+ ORDER BY access_date DESC LIMIT 0, 10　※「access_date ASC」→「access_date DESC」、「LIMIT 10, 0」→「LIMIT 0, 10」へ修正
+ ;
