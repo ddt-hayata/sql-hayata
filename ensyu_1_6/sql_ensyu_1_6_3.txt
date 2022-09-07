@@ -1,0 +1,9 @@
+/* 
+ * アンケート回答テーブル（quest）から感想欄が空でないものを取り出してみましょう。
+ * 取り出す列はanswer2列のみとします。
+ */
+
+// 問題
+
+// 回答
+SELECT answer2 FROM quest WHERE answer2 IS NOT NULL AND answer2 <> '';
