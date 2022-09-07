@@ -3,8 +3,14 @@
  * 取り出す列は、name列のみとします。
  */
 
-// 問題
-SELECT name ① quest WHERE ②;
+ // 問題
+ SELECT name ➀ quest
+ WHERE ➁
+ ;
 
-// 回答
-SELECT name FROM quest WHERE name NOT LIKE '%子';
+ // 回答
+ SELECT name
+ FROM quest
+ WHERE name
+ NOT LIKE '%子'
+ ;

@@ -3,7 +3,11 @@
  * 取り出す列は、isbn, title, priceの列とします。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT isbn, title, price FROM books WHERE title LIKE'SQL__'　
+ // 回答
+ SELECT isbn, title, price
+ FROM books
+ WHERE title
+ LIKE'SQL__'
+ ;

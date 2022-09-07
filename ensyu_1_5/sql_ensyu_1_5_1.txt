@@ -3,8 +3,15 @@
  * 取り出す対象は前列であるものとします。
  */
 
-// 問題
-SELECT ① FROM author WHERE ②;
+ // 問題
+ SELECT ➀
+ FROM author
+ WHERE ➁
+ ;
 
-// 回答
-SELECT * FROM author WHERE name LIKE '山田%';
+ // 回答
+ SELECT *
+ FROM author
+ WHERE name
+ LIKE '山田%'
+ ;

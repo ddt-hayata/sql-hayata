@@ -3,9 +3,16 @@
  * 2点誤りがあります。誤りを指摘してください。取り出す列は、title列とします。
  */
 
-// 問題
-SELECT title, FROM books WHERE publish LIKE '_社';
+ // 問題
+ SELECT title,
+ FROM books
+ WHERE publish
+ LIKE '_社'
+ ;
 
-// 回答
-SELECT title FROM books WHERE publish LIKE '%社';
-// 「,」がいならい。「'_社'」→「'%社'」に変更
+ // 回答
+ SELECT title　※「,」を削除
+ FROM books
+ WHERE publish
+ LIKE '%社'　※「'_社'」→「'%社'」に修正
+ ;
