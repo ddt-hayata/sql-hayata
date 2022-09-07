@@ -1,0 +1,10 @@
+/* 
+ * アンケート回答テーブル（quest）から回答日時が新しいものを先頭から10件取り出してみましょう。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。取得列は、name, answer1, answer2列とします。
+ */
+
+// 問題
+SELECT name, answer1, answer2 FROM quest ORDER BY ① LIMIT ②, 10;
+
+// 回答
+SELECT name, answer1, answer2 FROM quest ORDER BY answered DESC LIMIT 0, 10;
