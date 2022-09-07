@@ -1,0 +1,10 @@
+/* 
+ * アンケート回答テーブルから名前が「子」で終わらない似との情報だけを取り出してみましょう。
+ * 取り出す列は、name列のみとします。
+ */
+
+// 問題
+SELECT name ① quest WHERE ②;
+
+// 回答
+SELECT name FROM quest WHERE name NOT LIKE '%子';
