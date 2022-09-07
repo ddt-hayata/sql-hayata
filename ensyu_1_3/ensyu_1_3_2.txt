@@ -2,9 +2,12 @@
  * アクセス記録テーブル（access_log）からリンク元URLを重複のない形式で取り出してみましょう。
  */
 
-  /* 問題
- * ① referer ② access_log;
- */
+ // 問題
+ ➀ referer
+ ➁ access_log
+ ;
 
-// 回答
-SELECT DISTINCT referer FROM access_logl;
+ // 回答
+ SELECT DISTINCT referer
+ FROM access_logl
+ ;

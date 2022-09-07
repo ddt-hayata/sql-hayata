@@ -3,10 +3,12 @@
  * 2点誤りがあります。誤りを指摘してください。
  */
 
-/* 問題
- * SELECT ALL class,depart_id FROM employee;
- */
+ // 問題
+ SELECT ALL class,depart_id
+ FROM employee
+ ;
 
-// 回答
-SELECT DOSTINCT class FROM employee;
-// 『ALL』→『DISTINCT』に変更、depart_idを削除。
+ // 回答
+ SELECT DOSTINCT class　※「ALL」→「DISTINCT」に修正、depart_idを削除
+ FROM employee
+ ;

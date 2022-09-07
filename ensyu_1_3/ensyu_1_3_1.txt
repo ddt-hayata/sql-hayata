@@ -2,9 +2,12 @@
  * アンケート回答テーブル（quest）から都道府県名を重複のない形式で取り出してみましょう。
  */
 
- /* 問題
- * SELECT ① prefecture FROM ② ;
- */
-
-// 回答
-SELECT DISTINCT prefecture FROM quest;
+ // 問題
+ SELECT ➀ prefecture
+ FROM ➁
+ ;
+ 
+ // 回答
+ SELECT DISTINCT prefecture
+ FROM quest
+ ;

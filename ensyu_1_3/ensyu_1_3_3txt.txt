@@ -3,9 +3,9 @@
  * その際、同姓同名のユーザは取り除きます。
  */
 
-  /* 問題
- * 
- */
-
-// 回答
-SELECT DISTINCT l_name,f_name FROM usr;
+ // 問題
+ 
+ // 回答
+ SELECT DISTINCT l_name,f_name
+ FROM usr
+ ;
