@@ -1,0 +1,10 @@
+/* 
+ * アンケート回答テーブル（quest）から都道府県、性別ごとに本書の評価の平均を取り出してみましょう。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+
+// 問題
+SELECT ① FROM quest GROUP BY ②;
+
+// 回答
+SELECT prefecture, sex, AVG(answer1) FROM quest GROUP BY prefecture, sex;
