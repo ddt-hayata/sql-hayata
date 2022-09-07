@@ -1,0 +1,11 @@
+/* 
+ * 以下は、アンケート回答テーブル（quest）から都道府県、性別ごとの評価平均を求めるためのSQL命令ですが、
+ * 2点誤りがあります。誤りを指摘してください。
+ */
+
+// 問題
+SELECT prefecture, sex, age, AVG(answer1) IS 評価平均 FROM quest GROUP BY prefecture, sex;
+
+// 回答
+SELECT prefecture, sex, AVG(answer1) AS 評価平均 FROM quest GROUP BY prefecture, sex;
+// 「age」はキーに含まれないため削除、「IS」→「AS」

@@ -1,0 +1,9 @@
+/* 
+ * 書籍情報テーブル（books）で、出版社ごとに書籍価格の平均値を求めてみましょう。
+ * その際、取り出す列の別名は、それぞれ「出版社」「価格平均」とします。
+ */
+
+// 問題
+
+// 回答
+SELECT publish AS '出版社' AVG(price) AS 価格平均 FROM books GROUP BY publish;

@@ -1,0 +1,9 @@
+/* 
+ * ユーザテーブル（usr）から都道府県別のユーザ数を求めてみましょう。
+ * なお、取り出す列の別名は、それぞれ「都道府県」「ユーザ数」とします。
+ */
+
+// 問題
+
+// 回答
+SELECT prefecture AS 都道府県名 COUNT(*) AS ユーザ数 FROM usr GROUP BY prefecture;
