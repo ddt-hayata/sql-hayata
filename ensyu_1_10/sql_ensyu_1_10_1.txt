@@ -1,0 +1,11 @@
+/* 
+ * 商品テーブル（product）からp_name, price列を価格が安い順に取り出して見ましょう。
+ * その際、p_name列に「商品名」、price列に「価格」という別名を付けます。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+
+// 問題
+SELECT ①, ② FROM product ORDER BY price ASC;
+
+// 回答
+SELECT p_name AS 商品名, price AS 価格 FROM product ORDER BY price ASC;
