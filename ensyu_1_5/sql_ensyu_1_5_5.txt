@@ -1,0 +1,11 @@
+/* 
+ * 以下は書籍情報テーブル（books）から名前が「社」で終わる出版社の情報だけを取り出すSQL命令ですが、
+ * 2点誤りがあります。誤りを指摘してください。取り出す列は、title列とします。
+ */
+
+// 問題
+SELECT title, FROM books WHERE publish LIKE '_社';
+
+// 回答
+SELECT title FROM books WHERE publish LIKE '%社';
+// 「,」がいならい。「'_社'」→「'%社'」に変更

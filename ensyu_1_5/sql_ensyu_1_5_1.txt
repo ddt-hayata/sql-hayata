@@ -1,0 +1,10 @@
+/* 
+ * 著者情報テーブル（author）から名前「山田」で始まる著者の情報を取り出して見ましょう。
+ * 取り出す対象は前列であるものとします。
+ */
+
+// 問題
+SELECT ① FROM author WHERE ②;
+
+// 回答
+SELECT * FROM author WHERE name LIKE '山田%';
