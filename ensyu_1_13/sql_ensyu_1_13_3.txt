@@ -1,0 +1,20 @@
+/* 
+ * アクセス記録テーブル（access_log）からリンク元ごとのアクセス数を含め、10件未満を「C」
+ * 10件以上を「B」、50件以上を「A」とする「ランク」列を取得してみましょう。
+ * また、データはアクセス数が3件以上のものを多い順に並べるものとします。
+ */
+
+ // 問題
+ 
+ // 回答
+ SELECT referer, count(*) AS アクセス数,
+ CASE
+ WHEN count(*) >= 50 THEN 'A'
+ WHEN count(*) >= 10 THEN 'B'
+ ELSE 'C'
+ END AS ランク
+ FROM access_log
+ GROUP BY refererHAVING count(*) >= 3
+ ODER BY count(*) DESC
+ ;
+ 
