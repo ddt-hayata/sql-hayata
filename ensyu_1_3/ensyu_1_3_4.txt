@@ -1,0 +1,12 @@
+* 
+ * 以下は社員テーブル（employee）から重複なしの役職を取り出すためのSQL命令ですが、
+ * 2点誤りがあります。誤りを指摘してください。
+ */
+
+/* 問題
+ * SELECT ALL class,depart_id FROM employee;
+ */
+
+// 回答
+SELECT DOSTINCT class FROM employee;
+// 『ALL』→『DISTINCT』に変更、depart_idを削除。
