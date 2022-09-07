@@ -2,7 +2,10 @@
  * 月間売上テーブル（sales）で、店舗別の累計売上高を算出するためのSQL命令を記述してみましょう。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT s_id, SUM(s_value) FROM sales GROUP BY s_id;
+ // 回答
+ SELECT s_id, SUM(s_value)
+ FROM sales
+ GROUP BY s_id
+ ;

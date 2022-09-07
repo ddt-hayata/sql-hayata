@@ -3,8 +3,14 @@
  * 以下の空欄を埋めて、SQL命令を完成させてください。
  */
 
-// 問題
-SELECT ① FROM quest ② sex;
+ // 問題
+ SELECT ➀
+ FROM quest
+ ➁ sex
+ ;
 
-// 回答
-SELECT sex, MAX(age), MIN(age) FROM quest GROUP BY sex;
+ // 回答
+ SELECT sex, MAX(age), MIN(age)
+ FROM quest
+ GROUP BY sex
+ ;

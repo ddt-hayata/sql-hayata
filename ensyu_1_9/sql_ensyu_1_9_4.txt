@@ -2,7 +2,10 @@
  * 書籍情報テーブル（books）で、出版社ごとの書籍価格の最大値を求めてみましょう。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT publish, MAX(price) FROM books GROUP BY publish;
+ // 回答
+ SELECT publish, MAX(price)
+ FROM books
+ GROUP BY publish
+ ;

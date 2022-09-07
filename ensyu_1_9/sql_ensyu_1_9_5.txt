@@ -3,9 +3,14 @@
  * 2点誤りがあります。誤りを指摘してください。
  */
 
-// 問題
-SELECT page_id, SUM(*) FROM access_log ORDER BY page_id;
+ // 問題
+ SELECT page_id, SUM(*)
+ FROM access_log
+ ORDER BY page_id
+ ;
 
-// 回答
-SELECT page_id, count(*) FROM access_log GROUP BY page_id;
-// 「SUM(*)」→「count(*)」、「ORDER BY」→「GROUP BY」
+ // 回答
+ SELECT page_id, count(*)　※「SUM(*)」→「count(*)」へ修正
+ FROM access_log
+ GROUP BY page_id　※「ORDER BY」→「GROUP BY」へ修正
+ ;
