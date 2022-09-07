@@ -2,9 +2,9 @@
  * 月間売上テーブル（sales）からすべての列を取り出すためのSQL命令を記述してみましょう。
  */
 
-/* 問題
- * 
- */
+ // 問題
 
-// 回答
-SELECT * FROM sales;
+ // 回答
+ SELECT * 
+ FROM sales
+ ;

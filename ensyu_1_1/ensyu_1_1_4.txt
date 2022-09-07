@@ -3,9 +3,12 @@
  * 2点誤りがあります。誤りを指摘してください。
  */
 
-// 問題
-selest + from books:
+ // 問題
+ selest +
+ from books
+ :
 
-// 回答
-select * fron books;
-// 『+』を『*』に、『：』を『；』に直しました。
+ // 回答
+ select *　※「+」を「*」に修正
+ fron books　※「：」を「；」に修正
+ ;

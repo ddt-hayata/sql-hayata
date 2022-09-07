@@ -3,9 +3,12 @@
  * 以下の空欄を埋めて、SQL命令を完成させてください。
  */
 
-/* 問題
- * ① * FROM ② :
- */
+ // 問題
+ ➀ *
+ FROM ➁
+ ;
 
-// 回答
-SELECT * FROM books;
+ // 回答
+ SELECT * 
+ FROM books
+ ;
