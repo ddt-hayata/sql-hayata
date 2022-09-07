@@ -1,9 +1,13 @@
-/* 
+ /* 
  * 社員テーブル（employee）から「山田奈美」さんの情報を取り出してみましょう。
  * すべての列を取り出すものとします。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT * FROM employee WHERE l_name = '山田'　AND f_name = '奈美 ';
+ // 回答
+ SELECT *
+ FROM employee
+ WHERE l_name = '山田'
+ AND f_name = '奈美 '
+ ;

@@ -3,8 +3,15 @@
  * 回答者の情報のみを取り出してみましょう。取り出す列は全列であるものとします。
  */
 
-// 問題
-SELECT * FROM quest WHERE ① AND ②;
+ // 問題
+ SELECT *
+ FROM quest
+ WHERE ➀ AND ➁
+ ;
 
-// 回答
-SELECT * FROM quest WHERE sex = '女' AND age BETWEEN 20 AND 29;
+ // 回答
+ SELECT *
+ FROM quest
+ WHERE sex = '女'
+ AND age BETWEEN 20 AND 29
+ ;

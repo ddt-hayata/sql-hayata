@@ -3,8 +3,17 @@
  * のユーザ情報を取り出してみましょう。
  */
 
-// 問題
-SELECT l_name, f_name, email FROM usr WHERE ① AND ②;
+ // 問題
+ SELECT l_name, f_name, email
+ FROM usr
+ WHERE ➀
+ AND ➁
+ ;
 
-// 回答
-SELECT l_name, f_name, email FROM usr WHERE prefecture = '東京都' AND email LIKE '%@examples.com';
+ // 回答
+ SELECT l_name, f_name, email
+ FROM us
+  WHERE prefecture = '東京都'
+  AND email
+  LIKE '%@examples.com'
+  ;
