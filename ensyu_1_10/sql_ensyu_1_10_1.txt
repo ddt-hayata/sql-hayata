@@ -4,8 +4,14 @@
  * 以下の空欄を埋めて、SQL命令を完成させてください。
  */
 
-// 問題
-SELECT ①, ② FROM product ORDER BY price ASC;
+ // 問題
+ SELECT ➀, ➁
+ FROM product
+ ORDER BY price ASC
+ ;
 
-// 回答
-SELECT p_name AS 商品名, price AS 価格 FROM product ORDER BY price ASC;
+ // 回答
+ SELECT p_name AS 商品名, price AS 価格
+ FROM product
+ ORDER BY price ASC
+ ;

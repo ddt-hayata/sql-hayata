@@ -4,8 +4,14 @@
  * 以下の空欄を埋めて、SQL命令を完成させてください。
  */
 
-// 問題
-SELECT ① FROM quest　GROUP BY ②；
+ // 問題
+ SELECT ➀
+ FROM quest
+ GROUP BY ➁
+ ；
 
-// 回答
-SELECT prefecture AS 都道府県 AVE(age) AS 平均年齢 FROM quest　GROUP BY prefecture；
+ // 回答
+ SELECT prefecture AS 都道府県 AVE(age) AS 平均年齢
+ FROM quest
+ GROUP BY prefecture
+ ；

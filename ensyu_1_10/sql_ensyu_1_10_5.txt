@@ -3,9 +3,14 @@
  * 2点誤りがあります。誤りを指摘してください。
  */
 
-// 問題
-SELECT prefecture, sex, age, AVG(answer1) IS 評価平均 FROM quest GROUP BY prefecture, sex;
+ // 問題
+ SELECT prefecture, sex, age, AVG(answer1) IS 評価平均
+ FROM quest
+ GROUP BY prefecture, sex
+ ;
 
-// 回答
-SELECT prefecture, sex, AVG(answer1) AS 評価平均 FROM quest GROUP BY prefecture, sex;
-// 「age」はキーに含まれないため削除、「IS」→「AS」
+ // 回答
+ SELECT prefecture, sex, AVG(answer1) AS 評価平均　※「age」はキーに含まれないため削除、「IS」→「AS」へ修正
+ FROM quest
+ GROUP BY prefecture, sex
+ ;
