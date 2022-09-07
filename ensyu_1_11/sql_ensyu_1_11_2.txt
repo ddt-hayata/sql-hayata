@@ -4,8 +4,15 @@
  * 以下の空欄を埋めて、SQL命令を完成させてください。
  */
 
-// 問題
-SELECT isbn AS ISBNコード, ① FROM rental WHERE returned = 0 ② rental_date ASC;
+ // 問題
+ SELECT isbn AS ISBNコード, ➀
+ FROM rental
+ WHERE returned = 0 ➁ rental_date ASC
+ ;
 
-// 回答
-SELECT isbn AS ISBNコード, DATE_FORMAT(rental_date, '%y年 %m月 %d日') AS 貸出日 FROM rental WHERE returned = 0 ORDER BY rental_date ASC;
+ // 回答
+ SELECT isbn AS ISBNコード, DATE_FORMAT(rental_date, '%y年 %m月 %d日') AS 貸出日
+ FROM rental
+ WHERE returned = 0
+ ORDER BY rental_date ASC
+ ;

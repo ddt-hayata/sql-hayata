@@ -3,8 +3,14 @@
  * その際、平均値は小数点以下を四捨五入します。以下の空欄を埋めて、SQL命令を完成させてください。
  */
 
-// 問題
-SELECT prefecture, ① AS 平均値 FROM quest GROUP BY ②;
+ // 問題
+ SELECT prefecture, ➀ AS 平均値
+ FROM quest
+ GROUP BY ➁
+ ;
 
-// 回答
-SELECT prefecture, ROUND(AVG(answer1)) AS 評価平均 FROM quest GROUP BY prefecture;
+ // 回答
+ SELECT prefecture, ROUND(AVG(answer1)) AS 評価平均
+ FROM quest
+ GROUP BY prefecture
+ ;

@@ -3,7 +3,10 @@
  * 平均値が小数点以下になった場合、小数点以下は切り捨てます。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT publish , FLOOR(AVG(price)) FROM books GROUP BY publish;
+ // 回答
+ SELECT publish , FLOOR(AVG(price))
+ FROM books
+ GROUP BY publish
+ ;
