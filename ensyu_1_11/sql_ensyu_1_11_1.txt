@@ -1,0 +1,10 @@
+/* 
+ * アンケート回答テーブル（quest）から都道府県別の評価の平均値を求めて見ましょう。
+ * その際、平均値は小数点以下を四捨五入します。以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+
+// 問題
+SELECT prefecture, ① AS 平均値 FROM quest GROUP BY ②;
+
+// 回答
+SELECT prefecture, ROUND(AVG(answer1)) AS 評価平均 FROM quest GROUP BY prefecture;

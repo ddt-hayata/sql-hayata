@@ -1,0 +1,9 @@
+/* 
+ * ユーザテーブル（usr）から利用者（氏名）と完全な住所を、利用者コードに付いて降順で取り出すための
+ * SQL命令を記述してみましょう。別名は「利用者名」「住所」とします。
+ */
+
+// 問題
+
+// 回答
+SELECT use_id, CONCAT(l_name, f_name) AS 利用者, CONCAT(prefecture, city, o_address) AS 住所 FROM usr ORDER BY use_id DESC;
