@@ -3,7 +3,11 @@
  * 取り出すのは、answer1, answer2の列のみとします。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT answer2 FROM quest WHERE answer2 IS NOT NULL;
+ // 回答
+ SELECT answer2
+ FROM quest
+ WHERE answer2
+ IS NOT NULL
+ ;

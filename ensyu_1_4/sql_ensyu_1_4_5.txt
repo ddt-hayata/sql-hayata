@@ -3,7 +3,10 @@
  * 取り出すのは、i_name、answer1、answer2の列とします。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT name, answer1, answer2 FROM quest WHERE anawered >= '2013-01-01';
+ // 回答
+ SELECT name, answer1, answer2
+ FROM quest
+ WHERE anawered >= '2013-01-01'
+ ;

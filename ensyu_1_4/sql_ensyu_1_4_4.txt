@@ -3,7 +3,11 @@
  * 取り出すのは、name、sex、prefectureの列とします。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT name, sex, prefecture FROM quest WHERE age BETWEEN 30 AND 40;
+ // 回答
+ SELECT name, sex, prefecture
+ FROM quest
+ WHERE age
+ BETWEEN 30 AND 40
+ ;

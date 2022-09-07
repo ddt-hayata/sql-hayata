@@ -3,7 +3,10 @@
  * 取り出すのは、usr_id、isbnの列とします。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT usr_id, isbn FROM rental WHERE returned = 0;
+ // 回答
+ SELECT usr_id, isbn
+ FROM rental
+ WHERE returned = 0
+ ;

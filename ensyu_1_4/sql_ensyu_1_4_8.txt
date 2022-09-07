@@ -4,9 +4,12 @@
  * SQL命令に含まれる誤り2つ指摘してください。
  */
 
-// 問題
-SELECT title publish price FROM books WHERE price <= 5000;
+ // 問題
+ SELECT title publish price
+ FROM books
+ WHERE price <= 5000;
 
-// 回答
-SELECT title, publish, price FROM books WHERE price < 5000;
-// 列の間の「,」が抜けている。「<=」→「<」nに変更。
+ // 回答
+ SELECT title, publish, price　※列の間の「,」が抜けている
+ FROM books
+ WHERE price < 5000;　※「<=」→「<」に修正 
