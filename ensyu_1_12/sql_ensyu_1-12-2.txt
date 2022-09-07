@@ -3,8 +3,15 @@
  * 60歳より大きい行のみを取り出してみましょう。
  */
 
-// 問題
-SELECT ① FROM quest ② sex = '男' GROUP BY prefecture ③ MAX(age) > 60;
+ // 問題
+ SELECT ➀
+ FROM quest ➁ sex = '男'
+ GROUP BY prefecture ③ MAX(age) > 60
+ ;
 
-// 回答
-SELECT prefecture, MAX(age) FROM quest WHERE sex = '男' GROUP BY prefecture HAVING MAX(age) > 60;
+ // 回答
+ SELECT prefecture, MAX(age)
+ FROM quest
+ WHERE sex = '男'
+ GROUP BY prefecture HAVING MAX(age) > 60
+ ;

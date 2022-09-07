@@ -3,7 +3,11 @@
  * 登録数が3冊以上の情報だけを取り出してみましょう。
  */
 
-// 問題
+ // 問題
 
-// 回答
-SELECT author_id, COUNT(isbn) FROM author_books GROUP BY author_id HAVING COUNT(isbn) >= 3;
+ // 回答
+ SELECT author_id, COUNT(isbn)
+ FROM author_books
+ GROUP BY author_id
+ HAVING COUNT(isbn) >= 3
+ ;

@@ -3,8 +3,16 @@
  * 以下の空欄を埋めて、SQL命令を完成させてください。
  */
 
-// 問題
- SELECT ① FROM quest GROUP BY prefecture HAVING ②;
+ // 問題
+ SELECT ➀
+ FROM quest
+ GROUP BY prefecture
+ HAVING ➁
+ ;
 
-// 回答
-SELECT prefecture, AVG(age) FROM quest GROUP BY prefecture HAVING AVG(age) BETWEEN 35 AND 49;
+ // 回答
+ SELECT prefecture, AVG(age)
+ FROM quest
+ GROUP BY prefecture
+ HAVING AVG(age) BETWEEN 35 AND 49
+ ;
