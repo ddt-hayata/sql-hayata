@@ -1,0 +1,9 @@
+/* 
+ * アンケート集計テーブル（quest）から感想欄が未定義（NULL値）でない情報だけを取り出してみましょう。
+ * 取り出すのは、answer1, answer2の列のみとします。
+ */
+
+// 問題
+
+// 回答
+SELECT answer2 FROM quest WHERE answer2 IS NOT NULL;

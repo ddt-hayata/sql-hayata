@@ -1,0 +1,10 @@
+/* 
+ * 書籍情報テーブル（books）から出版社が「日経BP」「翔泳社」である書籍情報だけ取り出してみましょう。
+ * 取り出す列は、isbn、title、publish列とします。
+ */
+
+// 問題
+SELECT isbn, title, publish FROM ① WHERE publish ② ('日経BP', '翔泳社');
+
+// 回答
+SELECT isbn, title, publish FROM books WHERE publish IN ('日経BP', '翔泳社');

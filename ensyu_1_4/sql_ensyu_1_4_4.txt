@@ -1,0 +1,9 @@
+/* 
+ * アンケート集計テーブル（quest）から年齢（age列）が30歳以上40歳未満の人の回答のみを抜き出してみましょう。
+ * 取り出すのは、name、sex、prefectureの列とします。
+ */
+
+// 問題
+
+// 回答
+SELECT name, sex, prefecture FROM quest WHERE age BETWEEN 30 AND 40;

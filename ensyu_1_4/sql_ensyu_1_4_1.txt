@@ -1,0 +1,10 @@
+/* 
+ * アンケート回答テーブル（quest）から20歳以上の人間による回答のみを取り出してみましょう。
+ * 取り出すのはanswer1,answer2の列だけとします。
+ */
+
+// 問題
+SELECT ① FROM quest WHERE ②;
+
+// 回答
+SELECT answer1, answer2 quest WHERE age >= 20;

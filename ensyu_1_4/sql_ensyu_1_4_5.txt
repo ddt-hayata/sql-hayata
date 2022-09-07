@@ -1,0 +1,9 @@
+/* 
+ * アンケート回答テーブル（quest）から回答日時が「2013-01-01」以降の情報のみを取り出してみましょう。
+ * 取り出すのは、i_name、answer1、answer2の列とします。
+ */
+
+// 問題
+
+// 回答
+SELECT name, answer1, answer2 FROM quest WHERE anawered >= '2013-01-01';
