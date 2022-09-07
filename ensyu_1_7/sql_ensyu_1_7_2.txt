@@ -4,8 +4,17 @@
  * 取り出す列は、l_name, f_name, prefectureの列とします。
  */
 
-// 問題
-SELECT l_name, f_name, prefecture FROM usr WHERE ① ORDER BY ② f_name_kana ASC;
+ // 問題
+ SELECT l_name, f_name, prefecture
+ FROM usr
+ WHERE ➀
+ ORDER BY ➁ f_name_kana ASC
+ ;
 
-// 回答
-SELECT l_name, f_name, prefecture FROM usr WHERE prefecture IN ('東京都', '千葉県', '神奈川県') ORDER BY l_name_kana ASC, f_name_kana ASC;
+ // 回答
+ SELECT l_name, f_name, prefecture
+ FROM usr
+ WHERE prefecture
+ IN ('東京都', '千葉県', '神奈川県')
+ ORDER BY l_name_kana ASC, f_name_kana ASC
+ ;

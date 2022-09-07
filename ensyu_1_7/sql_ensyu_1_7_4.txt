@@ -3,10 +3,17 @@
  * 降順で取り出すためのSQL命令ですが、2点誤りがあります。誤りを指摘してください。
  */
 
-// 問題
-SELECT * FROM access_log WHERE access_date IN ('2013-01-01', '2013-01-31') ORDER BY referer, ip_address DESC;
+ // 問題
+ SELECT *
+ FROM access_log
+ WHERE access_date
+ IN ('2013-01-01', '2013-01-31')
+ ORDER BY referer, ip_address DESC
+ ;
 
-// 回答
-SELECT * FROM access_log WHERE access_date BETWEEN '2013-01-01' AND '2013-01-31' ORDER BY referer DESC , ip_address DESC;
-// 「IN ('2013-01-01', '2013-01-31')」→「BETWEEN '2013-01-01' AND '2013-01-31'」
-// 「referer,」→「referer DESC,」
+ // 回答
+ SELECT *
+ FROM access_log
+ WHERE access_date BETWEEN '2013-01-01' AND '2013-01-31'　※「IN ('2013-01-01', '2013-01-31')」→「BETWEEN '2013-01-01' AND '2013-01-31'」へ修正
+ ORDER BY referer DESC , ip_address DESC　※「referer,」→「referer DESC,」へ修正
+ ;

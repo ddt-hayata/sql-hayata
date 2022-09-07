@@ -3,8 +3,16 @@
  * 取り出す列は、title, priceの列とします。
  */
 
-// 問題
-SELECT title, price FROM books WHERE ① ORDER BY ②;
+ // 問題
+ SELECT title, price
+ FROM books
+ WHERE ➀
+ ORDER BY ➁
+ ;
 
-// 回答
-SELECT title, price FROM books WHERE price BETWEEN 2500 AND 3500 ORDER BY price ASC;
+ // 回答
+ SELECT title, price
+ FROM books
+ WHERE price BETWEEN 2500 AND 3500
+ ORDER BY price ASC
+ ;
