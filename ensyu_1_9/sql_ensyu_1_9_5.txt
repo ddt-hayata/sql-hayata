@@ -1,0 +1,11 @@
+/* 
+ * 以下は、アクセス記録テーブル（access_log）からメニューコード別のアクセス数を取得するためのSQL命令ですが、
+ * 2点誤りがあります。誤りを指摘してください。
+ */
+
+// 問題
+SELECT page_id, SUM(*) FROM access_log ORDER BY page_id;
+
+// 回答
+SELECT page_id, count(*) FROM access_log GROUP BY page_id;
+// 「SUM(*)」→「count(*)」、「ORDER BY」→「GROUP BY」
