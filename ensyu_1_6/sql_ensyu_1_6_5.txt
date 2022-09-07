@@ -1,0 +1,11 @@
+/* 
+ * 以下は、書籍情報テーブルから出版社（publish列）が「秀和システム」または「日経BP」であり、
+ * かつ、価格（price列）が3000円未満の書籍を取り出すためのSQL命令ですが、2点誤りがあります。
+ */
+
+// 問題
+SELECT isbn, title FROM books WHERE publish = '秀和システム' AND '日経BP' OR price < 3000;
+
+// 回答
+SELECT isbn, title FROM books WHERE (publish = '秀和システム' OR '日経BP') AND price < 3000;
+// 「'秀和システム' AND '日経BP'」はORにし（）で括る。「OR price」は「AND price」にする。

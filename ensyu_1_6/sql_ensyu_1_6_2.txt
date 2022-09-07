@@ -1,0 +1,10 @@
+/* 
+ * ユーザテーブル（usr）から東京都在住で、かつ、E-Mailアドレスのドメインが「examples.com」
+ * のユーザ情報を取り出してみましょう。
+ */
+
+// 問題
+SELECT l_name, f_name, email FROM usr WHERE ① AND ②;
+
+// 回答
+SELECT l_name, f_name, email FROM usr WHERE prefecture = '東京都' AND email LIKE '%@examples.com';
