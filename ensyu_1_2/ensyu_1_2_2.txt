@@ -1,0 +1,11 @@
+/*
+ * 商品テーブル（prodact）から商品名と単価を取り出してみましょう。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+
+/* 問題
+ * SELECT ① ② product:
+ */
+
+// 回答
+SELECT p_name, price FROM product;

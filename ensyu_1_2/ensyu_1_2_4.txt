@@ -1,0 +1,11 @@
+/*
+ * 以下の書籍テーブル（books）からtitle列とpublish列とを取り出すための
+ * SQL命令文ですが、2点誤りがあります。誤りを指摘してください。
+ */
+
+// 問題
+SELECTS title publish FROM books;
+
+// 回答
+SELECT title, publish FROM books;
+// 『SELESTS』→『SELECT』に変更、titleとpublishの間に『,』を追加。

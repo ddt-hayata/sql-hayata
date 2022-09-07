@@ -1,0 +1,11 @@
+/*
+ * 社員テーブル（employee）から社員の氏、名、役職を
+ * 取り出すためのSQL命令を記述してみましょう。
+ */
+
+/* 問題
+ * 
+ */
+
+// 回答
+SELECT　l_name, f_name, class FROM employee;
