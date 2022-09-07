@@ -3,9 +3,9 @@
  * 取り出すためのSQL命令を記述してみましょう。
  */
 
-/* 問題
- * 
- */
+ // 問題
 
-// 回答
-SELECT　l_name, f_name, class FROM employee;
+ // 回答
+ SELECT　l_name, f_name, class
+ FROM employee
+ ;
