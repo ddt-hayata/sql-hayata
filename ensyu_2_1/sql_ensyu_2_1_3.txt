@@ -1,0 +1,15 @@
+/* 
+ * 店舗テーブル（shop）と月間売上テーブル（sales）から2012年12月の全売上高を、売上高の低い順に出力してみましょう。
+ */
+
+ // 問題
+ 
+ 
+ // 回答
+ SELECT sh.s_name, SUM(sl.s_value) AS '全売上高'
+ FROM shop AS sh
+ INNER JOIN sales AS sl
+ ON sh.s_id = sl.s_id
+ WHERE sl.s_date BETWEEN '2012-1' AND '2012-12'
+ ORDER BY SUM(sl.s_value) ASC
+ ;

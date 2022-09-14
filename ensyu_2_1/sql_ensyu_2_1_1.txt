@@ -1,0 +1,22 @@
+/* 
+ * 社員テーブル（employee）とタイムカードテーブル（time_card）から氏名と2012年12月の勤務時間を、
+ * 社員コード、日付について昇順で出力してみましょう。空欄を埋めて、SQL命令を完成させましょう。
+ */
+
+ // 問題
+ SELECT ➀
+ FROM employee AS e
+ ➁ time _card AS t
+ ON ➂
+ WHERE t.r_date ➃ '2012-12-01' ➄ '2012-12-31'
+ ORDER BY e.s_id ASC, t.r_date ASC
+ ;
+ 
+ // 回答
+ SELECT e.l_name, e.f_name, t.r_date, t.work_time
+ FROM employee AS e
+ INNNER JOIN time_card AS t
+ ON e.s_id = t.s_id
+ WHERE t.r_date BETWEEN '2012-12-01' AND '2012-12-31'
+ ORDER BY e.s_id ASC, t.r_date ASC
+ ;

@@ -1,0 +1,18 @@
+/* 
+ * 貸出記録テーブル（rental）とユーザテーブル（usr）からそれぞれのユーザについて、
+ * 現在何冊を貸し出しているかを、貸出数の多い順に取得してみましょう。
+ * 取得列は、ユーザの氏名、貸出数とします。また、貸出数0のゆーざはしゅつりょくする必要はありません。
+ */
+
+ // 問題
+ 
+ // 回答
+ SELECT u.l_name, u.f_name, COUNT(r.id)
+ FROM usr AS u
+ INNER JOIN rental AS r
+ ON u.user_id = r.user_id
+ WHERE r.returned <> '1'
+ GROUP BY r.user_id, u.l_name, u.f_name
+ HAVING r.id > 0
+ ORDER BY COUNT(r.id) DESC
+ ;
