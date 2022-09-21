@@ -1,0 +1,23 @@
+/* 
+ * ユーザテーブル（usr）と貸出記録テーブル（rental）から、ユーザごとに貸出数を、貸出数が多い順に取得してみましょう。
+ * 取得列は、ユーザの氏名と貸出件数とし、貸出件数が0のユーザも出力するものとします。
+ * 以下の空欄を埋めて、SQL命令を完成させましょう。
+ */
+
+ // 問題
+ SELECT u.l_name, u.f_name, COUNT(r.id)
+ FROM rental AS r
+ ➀ usr AS u
+ ON ➁
+ GROUP BY ➂
+ ORDER BY ➃
+ ;
+ 
+ // 回答
+ SELECT u.l_name, u.f_name, COUNT(r.id)
+ FROM rental AS r
+ RIGHT JOIN usr AS u
+ ON r.usr_id = u.usr_id
+ GROUP BY u.l_name, u.f_name, r.usr_id
+ ORDER BY COUNT(r.id) DESC
+ ;

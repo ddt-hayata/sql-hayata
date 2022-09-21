@@ -1,0 +1,15 @@
+/* 
+ * 書籍情報テーブル（books）と貸出記録テーブル（rental）とを結合し、書籍ごとの貸出数累計を、累計数が多い順に出力してみましょう。
+ * その際、貸出履歴が1回もない書籍についても出力することにします。
+ */
+
+ // 問題
+ 
+ // 回答
+ SELECT b.title, COUNT(r.isbn)
+ FROM books AS b
+ RIGHT JOIN rental AS r
+ ON b.isbn = r.isbn
+ GROUP BY b.title, b.isbn
+ ORDER BY COUNT(r.isbn) DESC
+ ;
