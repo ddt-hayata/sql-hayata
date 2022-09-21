@@ -1,0 +1,31 @@
+/* 
+ * 書籍目次テーブル（contents）から前後のコンテンツを取り出してみましょう。
+ * なお、取り出す列は別名として「前コンテンツ」「現コンテンツ」「次コンテンツ」とし、
+ * 現ページのコンテンツコードについて昇順に並べるものとします。以下の空欄を埋めてSQL命令を完成させましょう。
+ */
+
+ // 問題
+ SELECT ➀
+ FROM 
+ (
+    contents AS cp
+    ➁ contents AS cc
+    ON ➂
+    ）
+ ➁ contents AS cn
+ ON ➃
+ ORDER BY ➄
+ ;
+ 
+ // 回答
+ SELECT cp.title AS 前コンテンツ, cc.title AS 現コンテンツ, cn.title AS 次コンテンツ
+ FROM 
+ (
+    contents AS cp
+    INNER JOIN contents AS cc
+    ON cp.next_id = cc.c_id
+    ）
+ INNER JOIN contents AS cn
+ ON cc.next_id = cn.c_id
+ ORDER BY cc.c_id ASC
+ ;
