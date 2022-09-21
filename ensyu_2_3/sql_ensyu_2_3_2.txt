@@ -1,0 +1,21 @@
+/* 
+ * メニューテーブル（menu）からそれぞれのメニューに対応する親メニュー名を
+ * メニューコードについて昇順で取り出してみましょう。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+
+ // 問題
+ SELECT ➀ AS メニュー名, ➁ AS 親メニュー名
+ FROM ➂ AS mc
+ INNER JOIN ➂ AS mn
+ ON ➃
+ ORDER BY ➄
+ ;
+ 
+ // 回答
+ SELECT mc.title AS メニュー名, mn.title AS 親メニュー名
+ FROM menu AS mc
+ INNER JOIN menu AS mn
+ ON mc.parent_id = mn.page_id
+ ORDER BY mc.page_id ASC
+ ;
