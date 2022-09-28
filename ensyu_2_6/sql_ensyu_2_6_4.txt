@@ -1,0 +1,22 @@
+/* 
+ * 以下は著者情報テーブル（author）とユーザテーブル（usr）からそれぞれ氏名の情報を取り出すためのSQL命令ですが、2点誤りがあります。
+ * 誤りを指摘してください。なお、統合したデータは重複を含まないものとし、結果は氏名（カナ）について昇順で並び替えます。
+ */
+
+ // 問題
+ SELECT a.name_kana
+ FROM author AS a
+ UNION ALL
+ SELECT u.l_name_kana, u.f_name_kana
+ FROM usr AS u
+ ORDER BY 1 DESC
+ ;
+ 
+ // 回答
+ SELECT a.name_kana
+ FROM author AS a
+ UNION　※「UNION ALL」→「UNION」に修正
+ SELECT CONCAT(u.l_name_kana, u.f_name_kana)　※CONCATを用いて文字列を結合させる。
+ FROM usr AS u
+ ORDER BY 1 DESC
+ ;
