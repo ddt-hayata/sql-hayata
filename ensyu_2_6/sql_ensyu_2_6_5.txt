@@ -1,0 +1,14 @@
+/* 
+ * ユーザテーブル（usr）とアンケート回答テーブル（quest）それぞれ含まれるユーザ氏名を比較し、
+ * 双方に含まれるデータのみを取り出してみましょう。
+ */
+
+ // 問題
+ 
+ // 回答
+ SELECT CONCAT(u.l_name_kana, u.f_name_kana)
+ FROM usr AS u
+ INTERSECT
+ SELECT q.name_kana
+ FROM quest AS q
+ ;
