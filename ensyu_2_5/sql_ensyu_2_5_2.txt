@@ -1,0 +1,27 @@
+/* 
+ * 所属部署テーブル（depart）から社員テーブル（employee）で使われていない部署コード、
+ * 部署名を取り出してみましょう。以下の空欄を宇埋めてSQL命令を完成させてください。
+ */
+
+ // 問題
+ SELECT depart_id, depart_name
+ FROM ➀
+ WHERE ➁
+     (
+         SELECT *
+         FROM employee
+         WHERE ➂
+     )
+ ;
+ 
+ // 回答
+ SELECT depart_id, depart_name
+ FROM depart
+ WHERE NOT EXISTS
+     (
+         SELECT *
+         FROM employee
+         WHERE employee.depart_id = depart.depart_id
+     )
+ ;
+ 
