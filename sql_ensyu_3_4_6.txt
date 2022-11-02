@@ -1,0 +1,35 @@
+/* 
+ * 社員テーブル（employee）において、役職列が部長である場合は「リーダー」に、
+ * 課長である場合には「マネージャ」に名称を変更してみましょう。
+ */
+
+
+ // 問題
+ UPDATE
+ employee
+ SET
+ class = 
+ (
+     ➀
+     class
+     ➁ '部長' THEN 'リーダー'
+     ➁ '課長' THEN 'マネージャ'
+     ELSE ➂
+ END
+ )
+ ;
+
+ // 回答
+ UPDATE
+ employee
+ SET
+ class = 
+ (
+     CASE
+     class
+     WHEN '部長' THEN 'リーダー'
+     WHEN '課長' THEN 'マネージャ'
+     ELSE class
+ END
+ )
+ ;
