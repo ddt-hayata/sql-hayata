@@ -1,0 +1,44 @@
+/* 
+ * 以下は、社員テーブル（employee）に対して、票のデータを挿入するためのSQL命令ですが、
+ * 2点誤りがあります。誤りを指摘してください。
+ */
+
+ 〇挿入対象のデータ
+ 社員コード　WA00001
+ 社員名（氏）　和田
+ 所属部署コード　J01
+ 最終更新日　（今日の日付））
+
+ // 問題
+ INSERT INTO
+ employee
+ (
+     s_id
+     l_name
+     depart_id
+     last_update
+ )
+ VALUE
+ (
+     'WA00001',
+     '和田',
+     'J01'
+ )
+ ;
+
+ // 回答
+ INSERT INTO
+ employee
+ (
+     s_id,　←　「,」を追加
+     l_name,　←　「,」を追加
+     depart_id,　←　「,」を追加
+     last_update
+ )
+ VALUES　←　「VALUE」を「VALUES」に修正
+ (
+     'WA00001',
+     '和田',
+     'J01'
+ )
+ ;
