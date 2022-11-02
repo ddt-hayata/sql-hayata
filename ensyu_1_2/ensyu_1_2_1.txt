@@ -1,0 +1,14 @@
+/*
+ * 書籍情報テーブル（books）からtitle列を取り出してみましょう。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+
+ // 問題
+ ➀ totle
+ FROM ➁
+ ;
+ 
+ // 回答
+ SELECT title
+ FROM books
+ ;
