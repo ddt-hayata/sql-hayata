@@ -1,0 +1,26 @@
+/* 
+ * 社員テーブル（employee）上、名前が「山田奈美」さんの役職を「主任」に、最終更新日を今日の日付にしてみましょう。
+ * 空欄を埋めて、SQL命令を完成させてください。
+ */
+ 
+ // 問題
+ UPDATE
+ employee
+ SET
+ ➀,
+ ➁
+ WHERE
+ ➂
+ ;
+
+ // 回答
+ UPDATE
+ employee
+ SET
+ calss = '主任',
+ last_update = CURRWNT_DATE
+ WHERE
+ l_name = '山田',
+ AND
+ f_name = '奈美'
+ ;
