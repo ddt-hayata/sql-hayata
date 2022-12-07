@@ -1,0 +1,32 @@
+/* 
+ * 所属部署テーブル（depart）にない所属部署に属する社員を、社員テーブル（employee）から削除してください。
+ * 空欄を埋めて、正しいSQL命令を完成させてください。
+ */
+ 
+ // 問題
+ ➀
+ employee
+ WHERE
+ depart_id
+ ➁
+ (
+     SELECT
+     depart_id
+     FROM
+     ➂
+ )
+ ;
+
+ // 回答
+ DELETE FROM
+ employee
+ WHERE
+ depart_id
+ NOT IN
+ (
+     SELECT
+     depart_id
+     FROM
+     depart
+ )
+ ;
