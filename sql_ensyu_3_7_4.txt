@@ -1,0 +1,20 @@
+/* 
+ * 以下は、書籍情報テーブル（books）上で、分類IDが「Z9999(未分類)」であるか、
+ * NULLである書籍を削除するSQL命令ですが2点誤りがあります。誤りを指摘してください。
+ */
+ 
+ // 問題
+ DELETE
+ books
+ WHERE
+ category_id = 'Z9999'
+ AND
+ category_id IS NULL
+
+ // 回答
+ DELETE　FROM　※「FROM」が抜けている
+ books
+ WHERE
+ category_id = 'Z9999'
+ OR　※「AND」→「OR」が正しい
+ category_id IS NULL
