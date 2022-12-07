@@ -1,0 +1,42 @@
+/* 
+ * 書籍情報テーブル（books）上、書名の後方に分類名を付加してみましょう。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+ 
+ // 問題
+ UPDATE
+ books
+ SET
+ ➀
+ =
+ CONCAT(
+     ➁,
+　　（
+　　　SELECT
+    　➂
+    　FROM
+    　category
+      WHERE
+      ➃
+     )
+ )
+ ;
+
+ // 回答
+ UPDATE
+ books
+ SET
+ title
+ =
+ CONCAT(
+     title,
+　　（
+　　　SELECT
+    　category_name
+    　FROM
+    　category
+      WHERE
+      category.category_id = books.category_id
+     )
+ )
+ ;
