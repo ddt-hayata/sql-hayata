@@ -1,0 +1,15 @@
+/* 
+ * ユーザテーブル（usr）から「東京都」に住んでいない人の情報だけを取り出してみましょう。
+ * 取り出すのは、i_name、f_name、emailの列とします。
+ */
+
+ // 問題
+ SELECT i_name, f_name, email
+ FROM ➀ WHERE ➁
+ ;
+
+ // 回答
+ SELECT i_name, f_name, email
+ FROM usr
+ WHERE prefecture <> '東京都'
+ ;

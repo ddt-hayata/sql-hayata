@@ -1,0 +1,15 @@
+/* 
+ * 以下の書籍テーブル（books）から価格（price列）が
+ * 5000円未満の書籍情報のみを取り出すためのSQL命令（取り出す列はtitle, publish, price列とします）です。
+ * SQL命令に含まれる誤り2つ指摘してください。
+ */
+
+ // 問題
+ SELECT title publish price
+ FROM books
+ WHERE price <= 5000;
+
+ // 回答
+ SELECT title, publish, price　※列の間の「,」が抜けている
+ FROM books
+ WHERE price < 5000;　※「<=」→「<」に修正 
