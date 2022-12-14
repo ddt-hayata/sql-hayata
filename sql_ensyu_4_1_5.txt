@@ -1,0 +1,28 @@
+/* 
+ * 以下は、貸出記録テーブル（rental）を新規に作成するためのSQL命令ですが誤りが2点あります。
+ * 誤りを指摘してください。
+ */
+ 
+ // 問題
+ CREATE TEBLE INTO
+ rental
+ (
+     id INT AUTO_INCREMENT, PRIMARY KEY,
+     user_id CHAR(7),
+     isbn CHAR(13),
+     rental_date DATE,
+     returned SMALLINT DEFAULT 0
+ )
+ ;
+
+ // 回答
+ CREATE TEBLE ※「INTO」がいらない
+ rental
+ (
+     id INT AUTO_INCREMENT PRIMARY KEY,　※「AUTO_INCREMENT」と「PRIMARY KEY」の間のカンマがいらない
+     user_id CHAR(7),
+     isbn CHAR(13),
+     rental_date DATE,
+     returned SMALLINT DEFAULT 0
+ )
+ ;

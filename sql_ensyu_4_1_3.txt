@@ -1,0 +1,15 @@
+/* 
+ * 月間売上テーブル（sales）を新規に生成してみましょう。
+ */
+ 
+ // 問題
+
+ // 回答
+ CREATE TABLE
+ sales
+ (
+     s_id CHAR(5) NOT NULL,
+     s_date CHAR(7) NOT NULL,
+     s_value INT,
+     PRIMARY KEY(s_id, s_date)
+ )
