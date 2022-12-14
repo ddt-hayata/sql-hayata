@@ -1,0 +1,18 @@
+/* 
+ * 以下は、アクセス記録テーブル（access_log）に対して、既存のreferer列の定義を「データ型VARCHAR（200）、NULL値を許可」で置き換えるためのSQL命令ですが、誤りが2点あります。
+ * 誤りを指摘してください。
+ */
+ 
+ // 問題
+ ALTER TABLE
+ access_log
+ MODIFY WITH
+ referer,VARCHAR(200),NULL
+ ;
+
+ // 回答
+ ALTER TABLE
+ access_log
+ MODIFY ※「WITH」を削除
+ referer VARCHAR(200) NULL ※カンマを削除
+ ;
