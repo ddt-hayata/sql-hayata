@@ -1,0 +1,16 @@
+/* 
+ * 商品テーブル（product）上に、商品名をキーとしたインデックスを作成してみましょう。
+ * インデックス名はind_productとします。
+ */
+ 
+ // 問題
+
+ // 回答
+ CREATE INDEX
+ ind_product
+ ON
+ product
+ (
+     p_name
+ )
+ ;

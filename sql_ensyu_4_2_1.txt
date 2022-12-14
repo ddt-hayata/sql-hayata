@@ -1,0 +1,24 @@
+/* 
+ * 貸出記録テーブル（rental）上に、貸出日をキーにしたインデックスを作成してみましょう。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+ 
+ // 問題
+ ➀
+ ind_rental
+ ➁
+ rental
+ (
+     ➂
+ )
+;
+
+// 回答
+CREATE INDEX
+ ind_rental
+ ON
+ rental
+ (
+     rental_date
+ )
+;

@@ -1,0 +1,25 @@
+/* 
+ * 注文書テーブル（order_main）上に、発注日、納品日をキーにした複合インデックスを作成してみましょう。
+ * 以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+ 
+ // 問題
+ ➀
+ ind_order
+ ON
+ ➁
+ (
+     ➂
+ )
+ ;
+
+ // 回答
+ CREATe INDEX
+ ind_order
+ ON
+ order_main
+ (
+     order_date,
+     delivery_date
+ )
+ ;
