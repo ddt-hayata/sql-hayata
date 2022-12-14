@@ -1,0 +1,22 @@
+/* 
+ * 以下は、社員テーブル（employee）のdepart_id列の後方に「email列（VARCHAR(255)型）」を追加するためのSQL命令ですが、誤りが2点あります。
+ * 誤りを指摘してください。
+ */
+ 
+ // 問題
+ ALTER TABLE
+ employee
+ ADD TO
+ email VARCHAR(255) NOT NULL
+ BEFORE
+ depart_id
+ ;
+
+ // 回答
+ ALTER TABLE
+ employee
+ ADD ※「TO」がいらない
+ email VARCHAR(255) NOT NULL
+ AFTER ※「BEFORE」→「AFTER」に修正
+ depart_id
+ ;

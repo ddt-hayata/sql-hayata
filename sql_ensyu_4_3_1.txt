@@ -1,0 +1,26 @@
+/* 
+ * 書籍情報テーブル（books）に対して、pages列（INT型、デフォルト値は0）、rating列（CHAR（1）型、デフォルトは'B'）を新たに追加してみましょう。
+ * 追加先は、テーブル定義の一番最後とします。空欄を埋めて、SQL命令を完成させてください。
+ */
+ 
+ // 問題
+ ➀
+ books
+ ADD
+ ➁,
+ ADD
+ rating CHAR(1) DEFAULT 'B' NOT NULL
+ AFTER
+ ➂
+ ;
+
+ // 回答
+ ALTER TABLE
+ books
+ ADD
+ pages INT DEFAULT 0 NOT NULL,
+ ADD
+ rating CHAR(1) DEFAULT 'B' NOT NULL
+ AFTER
+ category_id
+ ;

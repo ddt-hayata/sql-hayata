@@ -1,0 +1,34 @@
+/* 
+ * 月間売上テーブル（sales）を、主キーのない状態でまず新規作成してみましょう。
+ * これに対して、後から主キーを追加します。以下の空欄を埋めて、SQL命令を完成させてください。
+ */
+ 
+ // 問題
+ ➀
+ sales
+ (
+     ➁
+     s_date DATE NOT NULL,
+     s_value INT DEFAULT 0
+ )
+ ;
+ ➂
+ sales
+ ADD
+ ➃
+ ;
+
+ // 回答
+ CREATE TABLE
+ sales
+ (
+     s_id CHAR(5) NOT NULL
+     s_date DATE NOT NULL,
+     s_value INT DEFAULT 0
+ )
+ ;
+ ALTER TABLE
+ sales
+ ADD
+ PRIMARY KEY(s_id, s_date)
+ ;
